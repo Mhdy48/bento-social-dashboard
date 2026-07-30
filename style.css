@@ -77,6 +77,26 @@ body {
   font-family: var(--font-family-regular);
 }
 /* ==================================================
+                CUSTOM ENTRANCE ANIMATION
+        Scale + Fade In Effect For Elements
+================================================== */
+.animation-custom{
+  animation:custom 1s ease;
+}
+/* ==================== Animation Keyframes ==================== */
+@keyframes custom {
+  /* Initial State */
+  0%{
+    transform:scale(.8);
+    opacity:0;
+  }
+  /* Final State */
+  100%{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+/* ==================================================
                        GRID LAYOUT
 ================================================== */
 .grid {
