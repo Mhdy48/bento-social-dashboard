@@ -375,3 +375,84 @@ body {
     width:90%;
   }
 }
+/* ==================================================
+                    MOBILE RESPONSIVE
+                    767px and below
+================================================== */
+@media (max-width:767px){
+  /* ==================== Layout ==================== */
+  body{
+    height:auto;
+    padding:var(--spacing-sm);
+  }
+  /* ==================== Convert Grid To Flex ==================== */
+  .grid{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:auto;
+    gap:var(--spacing-md);
+  }
+  /* ==================== Remove Desktop Grid Rules ==================== */
+  .grid__card{
+    width:100%;
+    grid-column:auto;
+    grid-row:auto;
+  }
+  /* ==================== Schedule Card Layout ==================== */
+  .grid__card--schedule{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  /* ==================== Followers Card Layout ==================== */
+  .grid__card--followers{
+    flex-direction:column;
+    justify-content:center;
+  }
+  /* ==================== Text Alignment & Typography ==================== */
+  .grid__text--create,
+  .grid__title--reviews,
+  .grid__title--schedule,
+  .grid__text--ai,
+  .grid__text--platforms,
+  .grid__text--consistency,
+  .grid__text--followers{
+    text-align:center;
+    font-size:var(--font-size-xl);
+  }
+  /* ==================== Schedule Text ==================== */
+  .grid__text--schedule{
+    width:85%;
+    margin:0 var(--spacing-xl);
+  }
+  /* ==================== Platforms & Consistency Text ==================== */
+  .grid__text--platforms,
+  .grid__text--consistency{
+    width:100%;
+  }
+  /* ==================== Followers Text ==================== */
+  .grid__text--followers{
+    width:100%;
+  }
+  /* ==================== AI Image ==================== */
+  .grid__image--ai{
+    margin-top:var(--spacing-md);
+  }
+  /* ==================== Consistency Image ==================== */
+  .grid__image--consistency{
+    width:60%;
+    margin-top:var(--spacing-xs);
+  }
+  /* ==================== Growth Image ==================== */
+  .grid__image--growth{
+    width:50%;
+    margin:0 0 var(--spacing-sm) 0;
+  }
+  /* ==================== Followers Image ==================== */
+  .grid__image--followers{
+    order:2;
+    width:80%;
+    margin:var(--spacing-lg) 0 0 var(--spacing-lg);
+  }
+}
