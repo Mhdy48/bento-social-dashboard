@@ -8,7 +8,7 @@ This project focuses on creating a clean and modern UI while practicing advanced
 
 ## 🚀 Demo
 
-Live Demo: 
+Live Demo: [visit page](https://mhdy48.github.io/bento-social-dashboard/)
 
 ---
 
